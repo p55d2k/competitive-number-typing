@@ -66,6 +66,9 @@ timespent = round(endtime - starttime, 3)
 
 if x == y:
   score = round((timespent / n) * 100, 3)
+  if settings["color"]:
+    score -= 2
+
   print(Fore.GREEN + f"\nCorrect! Your time is {timespent}. \nYour score is {score}.")
   if score > 100:
     print(Fore.GREEN + "Your rank is Sloth. Get better.")

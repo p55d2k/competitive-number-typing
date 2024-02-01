@@ -10,6 +10,11 @@
 </div>
 
 
+## Replit 🚀
+
+[![Run on Repl.it](https://repl.it/badge/github/p55d2k/competitive-number-typing)](https://repl.it/github/p55d2k/competitive-number-typing)
+
+
 ## About 📖
 
 Competitive Number Typing is a game where n numbers will be shown on the screen and you have to type them as fast as possible. The game will end when you type all the numbers correctly or when you type a wrong number.
