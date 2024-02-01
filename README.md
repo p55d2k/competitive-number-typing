@@ -12,7 +12,7 @@
 
 ## About 📖
 
-Competitive Number Typing is a {projectDescription}.
+Competitive Number Typing is a game where n numbers will be shown on the screen and you have to type them as fast as possible. The game will end when you type all the numbers correctly or when you type a wrong number.
 
 
 ## Contributions 🤝
