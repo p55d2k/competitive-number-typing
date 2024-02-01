@@ -17,25 +17,25 @@ with open("settings.json", "r") as f:
 print(Fore.WHITE + "\033cCOMPETITIVE NUMBER TYPING")
 print("Type 'exit' to exit the game.")
 
-n = -1
-while n <= 10:
-  n = input(Fore.GREEN + "\nChoose the level of difficulty (>10): " + Fore.WHITE).strip().lower()
+difficulty = -1
+while difficulty <= 10:
+  difficulty = input(Fore.GREEN + "\nChoose the level of difficulty (>10): " + Fore.WHITE).strip().lower()
 
-  if n == "exit":
+  if difficulty == "exit":
     exit()
 
-  if not n.isdigit():
+  if not difficulty.isdigit():
     print(Fore.RED + "Invalid format. Try again.")
-    n = -1
+    difficulty = -1
     continue
 
-  n = int(n)
-  if n <= 10:
+  difficulty = int(difficulty)
+  if difficulty <= 10:
     print(Fore.RED + "Enter a number greater than 10.")
-    n = -1
+    difficulty = -1
     continue
 
-x = random.randint(10 ** (n-1), (10 ** n) - 1)
+x = random.randint(10 ** (difficulty - 1), (10 ** difficulty) - 1)
 
 if settings["color"]:
   colors = list(vars(Fore).values())
@@ -65,7 +65,7 @@ while run:
 timespent = round(endtime - starttime, 3)
 
 if x == y:
-  score = round((timespent / n) * 100, 3)
+  score = round((timespent / difficulty) * 100, 3)
   if settings["color"]:
     score -= 2
 
