@@ -18,7 +18,7 @@ print(Fore.WHITE + "\033cCOMPETITIVE NUMBER TYPING")
 print("Type 'exit' to exit the game.")
 
 n = -1
-while n <= 0:
+while n <= 10:
   n = input(Fore.GREEN + "\nChoose the level of difficulty (>10): " + Fore.WHITE).strip().lower()
 
   if n == "exit":
@@ -30,7 +30,7 @@ while n <= 0:
     continue
 
   n = int(n)
-  if n <= 0:
+  if n <= 10:
     print(Fore.RED + "Enter a number greater than 10.")
     n = -1
     continue
