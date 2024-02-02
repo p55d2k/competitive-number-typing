@@ -87,4 +87,4 @@ if x == y:
   else:
     print(Fore.GREEN + "Your rank is Cheater. You are a cheater.")
 else:
-  print(Fore.RED + f"Wrong! You typed {y}. \nYour rank is Skill Issue. You have a skill issue.")
+  print(Fore.RED + f"\nWrong! You typed {y}. \nYour rank is Skill Issue. You have a skill issue.\nYour time was {timespent}.")
