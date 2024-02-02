@@ -73,24 +73,15 @@ def print_score(x, y, timespent, difficulty, color, type_play):
     
     # print leaderboard
     if not os.path.exists("data"):
-      os.mkdir("data")
-      
-    if not os.path.exists(f"data/leaderboard_{type_play}.csv"):
-      with open(f"data/leaderboard_{type_play}.csv", "w") as f:
-        f.write("")
-        
-    scores = []
-    with open(f"data/leaderboard_{type_play}.csv", "r") as f:
-      for line in f:
-        scores.append(line.strip().split(","))
-        
-    if len(scores) < 5:
-      scores.append(["1000", "1000", "1000"])
-      scores.sort(key=lambda x: x[0])
-      print(Fore.GREEN + "\nYou made it to the leaderboard anyway!")
-      
-    print(Fore.CYAN + "\nTop 5 scores:")
-    n = 1
-    for score in scores:
-      print(f"{n}. Score: {score[0]}, Time: {score[1]}, Difficulty: {score[2]}")
-      n += 1
+      return
+    else:
+      scores = []
+      with open(f"data/leaderboard_{type_play}.csv", "r") as f:
+        for line in f:
+          scores.append(line.strip().split(","))
+          
+      print(Fore.CYAN + "\nTop 5 scores:")
+      n = 1
+      for score in scores:
+        print(f"{n}. Score: {score[0]}, Time: {score[1]}, Difficulty: {score[2]}")
+        n += 1
