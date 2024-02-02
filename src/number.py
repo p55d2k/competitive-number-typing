@@ -31,5 +31,5 @@ while run:
 
 timespent = round(endtime - starttime, 3)
 
-print_score(x, y, timespent, difficulty, settings["color"])
+print_score(x, y, timespent, difficulty, settings["color"], "number")
 time.sleep(10)

@@ -4,4 +4,3 @@ if type_play == "w":
   os.system("python3 src/word.py")
 elif type_play == "n":
   os.system("python3 src/number.py")
-  
