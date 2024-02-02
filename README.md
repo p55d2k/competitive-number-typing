@@ -19,6 +19,8 @@
 
 Competitive Number Typing is a game where n numbers will be shown on the screen and you have to type them as fast as possible. The game will end when you type all the numbers correctly or when you type a wrong number.
 
+I do not completely own the idea of this game. I was inspired by my friend's project and worked on it from his code. I made some changes and improvements to the game and added some features to it.
+
 
 ## Contributions 🤝
 
@@ -33,7 +35,7 @@ It would be great to have some help to improve this project. Feel free to fork t
 
 Copyright © 2023 by [p55d2k](https://github.com/p55d2k)
 
-**Competitive Number Typing** is available and distributed under the [MIT License](https://github.com/p55d2k/Competitive Number Typing/LICENSE).
+**Competitive Number Typing** is available and distributed under the [MIT License](https://github.com/p55d2k/competitive-number-typing/LICENSE).
 
 ### Code of Conduct
 
